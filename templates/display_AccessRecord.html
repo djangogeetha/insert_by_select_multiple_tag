@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>display_AccessRecord</h1>
+
+        <table border="2px">
+            <tr>
+                <th>pk</th>
+                <th>author</th>
+                <th>date</th>
+                <th>email</th>
+            </tr>
+
+
+            {% for ACR in QSACR %}
+                <tr>
+                    <td>{{ACR.pk}}</td>
+                    <td>{{ACR.author}}</td>
+                    <td>{{ACR.date}}</td>
+                    <td>{{ACR.email}}</td>
+                    
+                    
+                </tr>
+
+            {% endfor %}
+
+
+        </table>
+    </center>
+</body>
+</html>
